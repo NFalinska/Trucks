@@ -1,0 +1,193 @@
+<div class="container">
+<div class="row">
+  <div id="dataForm1" class="col-xs-12" style="display:none">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="row">
+      <div class="col-sm-2 form-group">
+          <label for="callcontroll"></label>
+          <input
+            type="text"
+            id="callcontroll"
+            placeholder="Callcontroll"
+            class="form-control"
+            name="callcontroll"
+            ngModel
+            required
+          >
+        </div>
+        <div class="col-sm-2 form-group">
+          <label for="readtruck"></label>
+          <input
+                  type="text"
+                  id="readtruck"
+                  placeholder="read"
+                  class="form-control"
+                  name="readtruck"
+                  ngModel
+          >
+        </div>
+        <div class="col-sm-2 form-group">
+          <label for="autocall"></label>
+          <input
+                  type="text"
+                  id="autocall"
+                  placeholder="Sound/Auto Call"
+                  class="form-control"
+                  name="autocall"
+                  ngModel
+          >
+        </div>
+        <div class="col-sm-2 form-group">
+          <label for="truck"></label>
+          <input
+                  type="text"
+                  id="truck"
+                  placeholder="truck"
+                  class="form-control"
+                  name="truck"
+                  ngModel
+          >
+        </div>
+
+        <div class="col-sm-2 form-group">
+          <label for="origin"></label>
+          <input
+                  type="text"
+                  id="origin"
+                  placeholder="origin"
+                  class="form-control"
+                  name="origin"
+                  ngModel
+          >
+        </div> </div>
+      <div class="row">
+        <div class="col-sm-2 form-group">
+          <label for="destination"></label>
+          <input
+                  type="text"
+                  id="destination"
+                  placeholder="destination"
+                  class="form-control"
+                  name="destination"
+                  ngModel
+          >
+        </div>
+        <div class="col-sm-2 form-group">
+          <label for="pickup"></label>
+          <input
+                  type="text"
+                  id="pickup"
+                  placeholder="pickup"
+                  class="form-control"
+                  name="pickup"
+                  ngModel
+          >
+        </div>
+        <div class="col-sm-2 form-group">
+          <label for="dho"></label>
+          <input
+                  type="text"
+                  id="dho"
+                  placeholder="DH-O"
+                  class="form-control"
+                  name="dho"
+                  ngModel
+          >
+        </div>
+        <div class="col-sm-2 form-group">
+          <label for="dhd"></label>
+          <input
+                  type="text"
+                  id="dhd"
+                  placeholder="DH-D"
+                  class="form-control"
+                  name="dhd"
+                  ngModel
+          >
+        </div>
+
+
+        <div class="col-sm-2 form-group">
+          <label for="fp"></label>
+          <input
+                  type="text"
+                  id="fp"
+                  placeholder="F/P"
+                  class="form-control"
+                  name="fp"
+                  ngModel
+          >
+        </div>
+          </div>
+          <div class="row">
+        <div class="col-sm-2 form-group">
+          <label for="lengthitem"></label>
+          <input
+                  type="text"
+                  id="lengthitem"
+                  placeholder="length"
+                  class="form-control"
+                  name="lengthitem"
+                  ngModel
+          >
+        </div>
+        <div class="col-sm-2 form-group">
+          <label for="weight"></label>
+          <input
+                  type="text"
+                  id="weight"
+                  placeholder="weight"
+                  class="form-control"
+                  name="weight"
+                  ngModel
+          >
+        </div>
+        <div class="col-sm-2 form-group">
+          <label for="trip"></label>
+          <input
+                  type="text"
+                  id="trip"
+                  placeholder="trip"
+                  class="form-control"
+                  name="trip"
+                  ngModel
+          >
+        </div>
+
+        <div class="col-sm-2 form-group">
+          <label for="alarm"></label>
+          <input
+                  type="text"
+                  id="alarm"
+                  placeholder="alarm"
+                  class="form-control"
+                  name="alarm"
+                  ngModel
+          >
+        </div>
+        <div class="col-sm-2 form-group">
+          <label for="actions"></label>
+          <input
+                  type="text"
+                  id="actions"
+                  placeholder="actions"
+                  class="form-control"
+                  name="actions"
+                  ngModel
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <button
+                  class="btn btn-success"
+                  type="submit"
+                  [disabled]="!f.valid"
+                  onclick="document.getElementById('dataForm1').style.display = 'none';"
+          >Save</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>

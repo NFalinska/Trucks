@@ -1,0 +1,12 @@
+* {
+    margin-top: 10px;
+}
+.title {
+    font-size: 30px;
+}
+th {
+    font-size: 14px;
+    color: white;
+    background-color: #2e2e2e;
+}
+

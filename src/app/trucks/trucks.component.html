@@ -1,0 +1,58 @@
+<div class="container">
+<div class="row">
+  <div class="col-xs-10">
+    <div class="title">Post Trucks</div>
+    <button type="button"
+            class="btn btn-success"
+            onclick="document.getElementById('dataForm1').style.display = 'block';">New</button>
+    <button type="button"
+            class="btn btn-danger"
+            onclick="document.querySelectorAll('.tr_items').forEach(function(el) {el.innerHTML='';});"
+
+    >Delete all</button>
+   <app-truck-edit></app-truck-edit>
+    <hr>
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th>Call Controll</th>
+        <th>Read</th>
+        <th>Sound/Auto Call</th>
+        <th>Truck</th>
+        <th>Origin</th>
+        <th>Destination</th>
+        <th>Pickup</th>
+        <th>DH-O</th>
+        <th>DH-D</th>
+        <th>F/P</th>
+        <th>Length</th>
+        <th>Weight</th>
+        <th>Trip</th>
+        <th>Alarm</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="tr_items"
+              *ngFor="let truck of trucks">
+        <td >{{ truck.callcontroll }}</td>
+       <td>{{truck.readtruck}}</td>
+       <td> {{truck.autocall}}</td>
+       <td> {{truck.truck}}</td>
+        <td>{{truck.origin}}</td>
+        <td> {{truck.destination}}</td>
+        <td> {{truck.pickup}}</td>
+        <td> {{truck.dho}}</td>
+        <td> {{truck.dhd}}</td>
+        <td> {{truck.fp}}</td>
+        <td> {{truck.lengthitem}}</td>
+        <td> {{truck.weight}}</td>
+        <td>{{truck.trip}}</td>
+        <td> {{truck.alarm}}</td>
+        <td> {{truck.actions}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
